@@ -10,6 +10,8 @@ pkg_search_module(GLFW REQUIRED glfw3)
 find_package(OpenGL REQUIRED)
 find_package(GLUT REQUIRED)
 find_package(GLEW REQUIRED)
+find_path(GLEW_INCLUDE_DIR GL/glew.h)
+find_library(GLEW_LIBRARY NAMES GLEW glew32 glew glew32s PATH_SUFFIXES lib64)
 
 
     
@@ -27,5 +29,5 @@ include_directories(${GLEW_INCLUDE_DIRS})
 target_link_libraries(test1 ${OPENGL_LIBRARIES} ${GLUT_LIBRARY} Threads::Threads)
 target_link_libraries(test1 ${GLFW_LIBRARIES})
 target_link_libraries(test1 ${GLFW_STATIC_LIBRARIES})
-link_libraries(${GLEW_LIBRARIES})
+target_link_libraries(test1 ${GLEW_LIBRARIES})
 
