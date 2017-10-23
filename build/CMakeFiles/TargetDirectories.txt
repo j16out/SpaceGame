@@ -1,0 +1,3 @@
+/home/jerin/SpaceGame/build/CMakeFiles/rebuild_cache.dir
+/home/jerin/SpaceGame/build/CMakeFiles/edit_cache.dir
+/home/jerin/SpaceGame/build/CMakeFiles/test1.dir

@@ -1,0 +1,15 @@
+Required for Ubuntu Linux install:
+
+sudo apt-get install build-essential
+
+GLFW:
+sudo apt-get update
+sudo apt-get install libglfw3
+sudo apt-get install libglfw3-dev
+
+OpenGL/GLUT:
+sudo apt install mesa-utils
+sudo apt-get install freeglut3-dev
+
+GLEW:
+sudo apt-get install libglew-dev
